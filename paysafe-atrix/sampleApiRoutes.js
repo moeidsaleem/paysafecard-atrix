@@ -20,7 +20,7 @@ var randomFixedInteger = function (length) {
 }
 //var achbankAccountNumber = randomFixedInteger(6);
 
-exports.cardpayment = function(req, res) {
+exports.https://github.com/moeidsaleem/paysafecard-atrix.git = function(req, res) {
 	merchantRefNumber = Math.random().toString(36).slice(2);
 	var json = req.query;
 	var billingDet = new PaysafeApiClient.BillingDetails();
@@ -71,6 +71,7 @@ exports.cardCustomer = function(req, res) {
 };
 
 exports.createProfile = function(req, res) {
+// Change everything to req.body for each value in Set
 	
 	merchantRefNumber = Math.random().toString(36).slice(2);
 	var profile = new PaysafeApiClient.Profiles();
@@ -92,6 +93,8 @@ exports.createProfile = function(req, res) {
 /*http://localhost:3000/createCard?profileId=7c69e976-ad0a-4387-9901-9caa71123621&cardNumber=5186750368967720
 */
 exports.createCard = function(req, res) {
+	// Change everything to req.body for each value in Set
+
 	merchantRefNumber = Math.random().toString(36).slice(2);
 	var json = req.query;
 	var profile = new PaysafeApiClient.Profiles();
@@ -136,6 +139,8 @@ exports.createCard = function(req, res) {
 
 
 exports.createAddress = function(req, res) {
+	// Change everything to req.body for each value in Set
+
 	var json = req.query;
 	merchantRefNumber = Math.random().toString(36).slice(2);
 	var profile = new PaysafeApiClient.Profiles();
@@ -163,6 +168,8 @@ exports.createAddress = function(req, res) {
  * 
  */
 exports.createACHBankAccount = function(req, res) {
+	// Change everything to req.body for each value in Set
+
 	var achbankAccountNumber = randomFixedInteger(6);
 	var json = req.query;
 	var profile = new PaysafeApiClient.Profiles();
@@ -193,6 +200,8 @@ exports.createACHBankAccount = function(req, res) {
  * 
  */
 exports.createEFTBankAccount = function(req, res) {
+	// Change everything to req.body for each value in Set
+
 	var json = req.query;
 	var profile = new PaysafeApiClient.Profiles();
 	var eftbankAccountNumber = randomFixedInteger(6);
@@ -222,6 +231,8 @@ exports.createEFTBankAccount = function(req, res) {
  * 
  */
 exports.createSEPABankAccount = function(req, res) {
+	// Change everything to req.body for each value in Set
+
 	var json = req.query;
 	var profile = new PaysafeApiClient.Profiles();
 	var sepabankAccount = new PaysafeApiClient.SEPABankAccounts();
@@ -250,6 +261,8 @@ exports.createSEPABankAccount = function(req, res) {
  * 
  */
 exports.submitEnrollmentLookup = function(req, res){
+	// Change everything to req.body for each value in Set
+
 	merchantRefNumber = Math.random().toString(36).slice(2);
 	var json = req.query;
 	var enrollment = new PaysafeApiClient.Enrollmentchecks();
@@ -285,6 +298,8 @@ exports.submitEnrollmentLookup = function(req, res){
  * 
  */
 exports.submitAuthenticationRequest = function(req, res){
+	// Change everything to req.body for each value in Set
+
 	merchantRefNumber = Math.random().toString(36).slice(2);
 	var json = req.query;
 	var enrollment = new PaysafeApiClient.Enrollmentchecks();
